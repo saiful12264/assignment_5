@@ -13,10 +13,66 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- fontawesome cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link  -->
+
+    <link rel="stylesheet" href="./style/styles.css" />
   </head>
-  <body>
-    <h1>Emergency Hotline</h1>
-  </body>
+<body class="hind-madurai mx-auto">
+  <nav
+    class=" min-h-[80px] shadow-[0px_1px_50px_0px_rgba(181,181,181,0.25)] bg-[rgba(255,255,255,1)] px-4 py-3 md:px-[60px] md:py-[24px]"
+  >
+    <div class="nav-parent flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+      <!-- Left -->
+      <div class="left flex justify-center items-center gap-2 md:gap-3">
+        <img src="./assets/logo.png" alt="" class="w-[50px] h-[50px] md:w-[60px] md:h-[60px]" />
+        <h1 class="text-[#006747] font-bold text-xl md:text-3xl leading-tight text-center md:text-left">
+          Emergency <br />
+          Service
+        </h1>
+      </div>
+      
+      <!-- Right -->
+      <div class="right flex justify-center items-center gap-3 md:gap-5">
+        <button
+          class="btn w-[100px] h-[44px] p-[8px] rounded-[30px] bg-[rgba(65,255,107,0.1)] text-[16px] md:w-[123px] md:h-[52px] md:text-[20px] font-black text-center"
+        >
+          0
+          <span>
+            <img src="./assets/heart.png" alt="" class="w-[24px] h-[24px] md:w-[30px] md:h-[30px]" />
+          </span>
+        </button>
+        <button
+          class="btn w-[100px] h-[44px] p-[8px] rounded-[30px] bg-[rgba(65,255,107,0.1)] text-[16px] md:w-[123px] md:h-[52px] md:text-[20px] font-black text-center"
+        >
+          100
+          <span>
+            <img src="./assets/coin.png" alt="" class="w-[20px] h-[20px] md:w-[24px] md:h-[24px]" />
+          </span>
+        </button>
+        <button
+          class="btn text-[16px] md:text-[20px] font-semibold text-center w-[110px] h-[44px] md:w-[127px] md:h-[52px] p-[8px] rounded-[30px] bg-[rgba(0,166,62,1)] text-white"
+        >
+          2 Copy
+        </button>
+      </div>
+    </div>
+  </nav>
+</body>
+
 </html>
