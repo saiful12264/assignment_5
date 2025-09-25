@@ -1,4 +1,4 @@
-const History = [];
+let History = [];
 // function get innerText
 function getInnerTextValue(id) {
   const value = parseInt(document.getElementById(id).innerText);
@@ -30,7 +30,9 @@ for (let heart of hearts) {
 document.getElementById("call-1").addEventListener("click", function () {
   const coinValue = getInnerTextValue("coin");
   if (coinValue < 20) {
-    alert("❌ Insufficient balance. You need at least 20 coins to make a call.");
+    alert(
+      "❌ Insufficient balance. You need at least 20 coins to make a call."
+    );
     return;
   }
 
@@ -78,15 +80,14 @@ document.getElementById("call-1").addEventListener("click", function () {
   }
 });
 
-
-
-
 // call-2 button functionality
 
 document.getElementById("call-2").addEventListener("click", function () {
   const coinValue = getInnerTextValue("coin");
   if (coinValue < 20) {
-    alert("❌ Insufficient balance. You need at least 20 coins to make a call.");
+    alert(
+      "❌ Insufficient balance. You need at least 20 coins to make a call."
+    );
     return;
   }
 
@@ -138,7 +139,9 @@ document.getElementById("call-2").addEventListener("click", function () {
 document.getElementById("call-3").addEventListener("click", function () {
   const coinValue = getInnerTextValue("coin");
   if (coinValue < 20) {
-    alert("❌ Insufficient balance. You need at least 20 coins to make a call.");
+    alert(
+      "❌ Insufficient balance. You need at least 20 coins to make a call."
+    );
     return;
   }
 
@@ -190,7 +193,9 @@ document.getElementById("call-3").addEventListener("click", function () {
 document.getElementById("call-4").addEventListener("click", function () {
   const coinValue = getInnerTextValue("coin");
   if (coinValue < 20) {
-    alert("❌ Insufficient balance. You need at least 20 coins to make a call.");
+    alert(
+      "❌ Insufficient balance. You need at least 20 coins to make a call."
+    );
     return;
   }
 
@@ -242,7 +247,9 @@ document.getElementById("call-4").addEventListener("click", function () {
 document.getElementById("call-5").addEventListener("click", function () {
   const coinValue = getInnerTextValue("coin");
   if (coinValue < 20) {
-    alert("❌ Insufficient balance. You need at least 20 coins to make a call.");
+    alert(
+      "❌ Insufficient balance. You need at least 20 coins to make a call."
+    );
     return;
   }
 
@@ -294,7 +301,9 @@ document.getElementById("call-5").addEventListener("click", function () {
 document.getElementById("call-6").addEventListener("click", function () {
   const coinValue = getInnerTextValue("coin");
   if (coinValue < 20) {
-    alert("❌ Insufficient balance. You need at least 20 coins to make a call.");
+    alert(
+      "❌ Insufficient balance. You need at least 20 coins to make a call."
+    );
     return;
   }
 
@@ -346,7 +355,9 @@ document.getElementById("call-6").addEventListener("click", function () {
 document.getElementById("call-7").addEventListener("click", function () {
   const coinValue = getInnerTextValue("coin");
   if (coinValue < 20) {
-    alert("❌ Insufficient balance. You need at least 20 coins to make a call.");
+    alert(
+      "❌ Insufficient balance. You need at least 20 coins to make a call."
+    );
     return;
   }
 
@@ -398,7 +409,9 @@ document.getElementById("call-7").addEventListener("click", function () {
 document.getElementById("call-8").addEventListener("click", function () {
   const coinValue = getInnerTextValue("coin");
   if (coinValue < 20) {
-    alert("❌ Insufficient balance. You need at least 20 coins to make a call.");
+    alert(
+      "❌ Insufficient balance. You need at least 20 coins to make a call."
+    );
     return;
   }
 
@@ -450,7 +463,9 @@ document.getElementById("call-8").addEventListener("click", function () {
 document.getElementById("call-9").addEventListener("click", function () {
   const coinValue = getInnerTextValue("coin");
   if (coinValue < 20) {
-    alert("❌ Insufficient balance. You need at least 20 coins to make a call.");
+    alert(
+      "❌ Insufficient balance. You need at least 20 coins to make a call."
+    );
     return;
   }
 
@@ -498,11 +513,12 @@ document.getElementById("call-9").addEventListener("click", function () {
   }
 });
 
-
-
 // clear button functionality
 
+document.getElementById("clear-btn").addEventListener("click", function () {
+  const mainContainer = document.getElementById("container");
 
+  mainContainer.innerText = " ";
+  History = [];
 
-
-
+});
