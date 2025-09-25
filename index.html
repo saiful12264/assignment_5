@@ -84,7 +84,7 @@
           <button
             class="btn text-[16px] md:text-[20px] font-semibold text-center w-[110px] h-[44px] md:w-[127px] md:h-[52px] p-[8px] rounded-[30px] bg-[rgba(0,166,62,1)] text-white"
           >
-            2 Copy
+            <span id="copy-count">0</span> Copy
           </button>
         </div>
       </div>
@@ -152,14 +152,14 @@
             </button>
             <br />
             <div class="flex justify-between items-center gap-3">
-              <div class="flex-1">
+              <div class="flex-1" id="cp-1">
                 <button
                   class="btn text-[16px] font-normal text-center max-h-[40px] p-[16px] rounded-[8px] bg-[rgba(255,255,255,1)] border-1 border-[rgba(212,214,213,1)] w-full text-[rgba(92,92,92,1)]"
                 >
                   <i class="far fa-copy text-gray-500"></i> Copy
                 </button>
               </div>
-              <div class="flex-1 " id="call-1">
+              <div class="flex-1" id="call-1">
                 <button
                   class="btn text-[16px] font-normal text-center h-[40px] p-[16px] rounded-[8px] bg-[rgba(0,166,62,1)] text-white w-full"
                 >
@@ -194,7 +194,7 @@
             </button>
             <br />
             <div class="flex justify-between items-center gap-3">
-              <div class="flex-1">
+              <div class="flex-1" id="cp-2">
                 <button
                   class="btn text-[16px] font-normal text-center h-[40px] p-[16px] rounded-[8px] bg-[rgba(255,255,255,1)] border-1 border-[rgba(212,214,213,1)] text-[rgba(92,92,92,1)] w-full"
                 >
@@ -243,14 +243,14 @@
             </button>
             <br />
             <div class="flex justify-between items-center gap-3">
-              <div class="flex-1">
+              <div class="flex-1" id="cp-3">
                 <button
                   class="btn text-[16px] font-normal text-center h-[40px] p-[16px] rounded-[8px] bg-[rgba(255,255,255,1)] border-1 border-[rgba(212,214,213,1)] text-[rgba(92,92,92,1)] w-full"
                 >
                   <span class=""><i class="far fa-copy"></i></span> Copy
                 </button>
               </div>
-              <div class="flex-1 " id="call-3">
+              <div class="flex-1" id="call-3">
                 <button
                   class="btn text-[16px] font-normal text-center h-[40px] p-[16px] rounded-[8px] bg-[rgba(0,166,62,1)] text-white w-full"
                 >
@@ -291,7 +291,7 @@
             </button>
             <br />
             <div class="flex justify-between items-center gap-3">
-              <div class="flex-1">
+              <div class="flex-1" id="cp-4">
                 <button
                   class="btn text-[16px] font-normal text-center h-[40px] p-[16px] rounded-[8px] bg-[rgba(255,255,255,1)] border-1 border-[rgba(212,214,213,1)] text-[rgba(92,92,92,1)] w-full"
                 >
@@ -337,7 +337,7 @@
             </button>
             <br />
             <div class="flex justify-between items-center gap-3">
-              <div class="flex-1">
+              <div class="flex-1" id="cp-5">
                 <button
                   class="btn text-[16px] font-normal text-center h-[40px] p-[16px] rounded-[8px] bg-[rgba(255,255,255,1)] border-1 border-[rgba(212,214,213,1)] text-[rgba(92,92,92,1)] w-full"
                 >
@@ -383,7 +383,7 @@
             </button>
             <br />
             <div class="flex justify-between items-center gap-3">
-              <div class="flex-1">
+              <div class="flex-1" id="cp-6">
                 <button
                   class="btn text-[16px] font-normal text-center h-[40px] p-[16px] rounded-[8px] bg-[rgba(255,255,255,1)] border-1 border-[rgba(212,214,213,1)] text-[rgba(92,92,92,1)] w-full"
                 >
@@ -429,7 +429,7 @@
             </button>
             <br />
             <div class="flex justify-between items-center gap-3">
-              <div class="flex-1">
+              <div class="flex-1" id="cp-7">
                 <button
                   class="btn text-[16px] font-normal text-center h-[40px] p-[16px] rounded-[8px] bg-[rgba(255,255,255,1)] border-1 border-[rgba(212,214,213,1)] text-[rgba(92,92,92,1)] w-full"
                 >
@@ -475,7 +475,7 @@
             </button>
             <br />
             <div class="flex justify-between items-center gap-3">
-              <div class="flex-1">
+              <div class="flex-1" id="cp-8">
                 <button
                   class="btn text-[16px] font-normal text-center h-[40px] p-[16px] rounded-[8px] bg-[rgba(255,255,255,1)] border-1 border-[rgba(212,214,213,1)] text-[rgba(92,92,92,1)] w-full"
                 >
@@ -521,7 +521,7 @@
             </button>
             <br />
             <div class="flex justify-between items-center gap-3">
-              <div class="flex-1">
+              <div class="flex-1" id="cp-9">
                 <button
                   class="btn text-[16px] font-normal text-center h-[40px] p-[16px] rounded-[8px] bg-[rgba(255,255,255,1)] border-1 border-[rgba(212,214,213,1)] text-[rgba(92,92,92,1)] w-full"
                 >
@@ -555,25 +555,17 @@
             </h1>
 
             <button
-              class="btn text-[16px] font-semibold text-center - w-[114px] h-[52px] px-[36px] py-[12px] rounded-[50px] bg-[rgba(0,166,62,1)] text-white" id="clear-btn"
+              class="btn text-[16px] font-semibold text-center - w-[114px] h-[52px] px-[36px] py-[12px] rounded-[50px] bg-[rgba(0,166,62,1)] text-white"
+              id="clear-btn"
             >
               Clear
             </button>
           </div>
         </div>
 
-      
         <!-- history card section  -->
 
-        <div id="container">
-
-         
-
-        </div>
-
-
-
-        
+        <div id="container"></div>
       </div>
     </section>
 

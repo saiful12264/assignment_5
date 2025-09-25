@@ -520,5 +520,115 @@ document.getElementById("clear-btn").addEventListener("click", function () {
 
   mainContainer.innerText = " ";
   History = [];
+});
 
+// copy button functionality
+
+// copy button -1
+
+document.getElementById("cp-1").addEventListener("click", function () {
+  const copy = getInnerTextValue("copy-count");
+  const copyValue = copy + 1;
+
+  setInnerText("copy-count", copyValue);
+
+  alert("Copied : 999");
+
+  navigator.clipboard.writeText("999");
+});
+// copy button -2
+
+document.getElementById("cp-2").addEventListener("click", function () {
+  const copy = getInnerTextValue("copy-count");
+  const copyValue = copy + 1;
+
+  setInnerText("copy-count", copyValue);
+
+  alert("Copied : 999");
+
+  navigator.clipboard.writeText("999");
+});
+// copy button -3
+
+document.getElementById("cp-3").addEventListener("click", function () {
+  const copy = getInnerTextValue("copy-count");
+  const copyValue = copy + 1;
+
+  setInnerText("copy-count", copyValue);
+
+  alert("Copied : 999");
+
+  navigator.clipboard.writeText("999");
+});
+// copy button -4
+
+document.getElementById("cp-4").addEventListener("click", function () {
+  const copy = getInnerTextValue("copy-count");
+  const copyValue = copy + 1;
+
+  setInnerText("copy-count", copyValue);
+
+  alert("Copied : 1994-999999");
+
+  navigator.clipboard.writeText("1994-999999");
+});
+// copy button -5
+
+document.getElementById("cp-5").addEventListener("click", function () {
+  const copy = getInnerTextValue("copy-count");
+  const copyValue = copy + 1;
+
+  setInnerText("copy-count", copyValue);
+
+  alert("Copied : 109");
+
+  navigator.clipboard.writeText("109");
+});
+// copy button -6
+
+document.getElementById("cp-6").addEventListener("click", function () {
+  const copy = getInnerTextValue("copy-count");
+  const copyValue = copy + 1;
+
+  setInnerText("copy-count", copyValue);
+
+  alert("Copied : 106");
+
+  navigator.clipboard.writeText("106");
+});
+// copy button -7
+
+document.getElementById("cp-7").addEventListener("click", function () {
+  const copy = getInnerTextValue("copy-count");
+  const copyValue = copy + 1;
+
+  setInnerText("copy-count", copyValue);
+
+  alert("Copied : 16216");
+
+  navigator.clipboard.writeText("16216");
+});
+// copy button -8
+
+document.getElementById("cp-8").addEventListener("click", function () {
+  const copy = getInnerTextValue("copy-count");
+  const copyValue = copy + 1;
+
+  setInnerText("copy-count", copyValue);
+
+  alert("Copied : 16445");
+
+  navigator.clipboard.writeText("16445");
+});
+// copy button -9
+
+document.getElementById("cp-9").addEventListener("click", function () {
+  const copy = getInnerTextValue("copy-count");
+  const copyValue = copy + 1;
+
+  setInnerText("copy-count", copyValue);
+
+  alert("Copied : 163");
+
+  navigator.clipboard.writeText("163");
 });
