@@ -60,7 +60,7 @@
           <button
             class="btn w-[100px] h-[44px] p-[8px] rounded-[30px] bg-[rgba(65,255,107,0.1)] text-[16px] md:w-[123px] md:h-[52px] md:text-[20px] font-black text-center"
           >
-            0
+            <span id="nav-heart">0</span>
             <span>
               <img
                 src="./assets/heart.png"
@@ -120,7 +120,7 @@
     <section
       class="bg-[rgba(245,255,246,1)] p-10 flex flex-col md:flex-row gap-7"
     >
-      <div class="card md:w-[75%] ">
+      <div class="card md:w-[75%]">
         <div class="card-parent grid md:grid-cols-3 gap-7">
           <!-- first card -->
           <div
@@ -132,7 +132,7 @@
                 alt=""
                 class="w-[32px] h-[32px]"
               />
-              <div>
+              <div class="card-heart">
                 <i class="far fa-heart text-[rgba(92,92,92,1)] text-[24px]"></i>
               </div>
             </div>
@@ -174,7 +174,7 @@
           >
             <div class="flex justify-between items-center mb-3">
               <img src="./assets/police.png" alt="" class="w-[32px] h-[32px]" />
-              <div>
+              <div class="card-heart">
                 <i class="far fa-heart text-[rgba(92,92,92,1)] text-[24px]"></i>
               </div>
             </div>
@@ -223,7 +223,7 @@
                 alt=""
                 class="w-[32px] h-[32px]"
               />
-              <div class="text-[rgba(92,92,92,1)] text-[24px]">
+              <div class="text-[rgba(92,92,92,1)] text-[24px] card-heart">
                 <i class="far fa-heart"></i>
               </div>
             </div>
@@ -269,7 +269,7 @@
                 alt=""
                 class="w-[32px] h-[32px]"
               />
-              <div class="text-[rgba(92,92,92,1)] text-[24px]">
+              <div class="text-[rgba(92,92,92,1)] text-[24px] card-heart">
                 <i class="far fa-heart"></i>
               </div>
             </div>
@@ -317,7 +317,7 @@
                 alt=""
                 class="w-[32px] h-[32px]"
               />
-              <div class="text-[rgba(92,92,92,1)] text-[24px]">
+              <div class="text-[rgba(92,92,92,1)] text-[24px] card-heart">
                 <i class="far fa-heart"></i>
               </div>
             </div>
@@ -363,7 +363,7 @@
                 alt=""
                 class="w-[32px] h-[32px]"
               />
-              <div class="text-[rgba(92,92,92,1)] text-[24px]">
+              <div class="text-[rgba(92,92,92,1)] text-[24px] card-heart">
                 <i class="far fa-heart"></i>
               </div>
             </div>
@@ -409,7 +409,7 @@
                 alt=""
                 class="w-[32px] h-[32px]"
               />
-              <div class="text-[rgba(92,92,92,1)] text-[24px]">
+              <div class="text-[rgba(92,92,92,1)] text-[24px] card-heart">
                 <i class="far fa-heart"></i>
               </div>
             </div>
@@ -455,7 +455,7 @@
                 alt=""
                 class="w-[32px] h-[32px]"
               />
-              <div class="text-[rgba(92,92,92,1)] text-[24px]">
+              <div class="text-[rgba(92,92,92,1)] text-[24px] card-heart">
                 <i class="far fa-heart"></i>
               </div>
             </div>
@@ -501,7 +501,7 @@
                 alt=""
                 class="w-[32px] h-[32px]"
               />
-              <div class="text-[rgba(92,92,92,1)] text-[24px]">
+              <div class="text-[rgba(92,92,92,1)] text-[24px] card-heart">
                 <i class="far fa-heart"></i>
               </div>
             </div>
@@ -543,7 +543,7 @@
       <!-- history section start here  -->
 
       <div
-        class="history md:w-[25%]  bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[12px] p-6"
+        class="history md:w-[25%] bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-[12px] p-6"
       >
         <div class="history-banner min-h-[52px] bg-white mb-[8px]">
           <div class="flex justify-between items-center">
@@ -563,7 +563,7 @@
         </div>
 
         <div
-          class=" rounded-[8px] bg-[rgba(250,250,250,1)] p-4 min-h[83px] w-full my-[8px] flex justify-between items-center"
+          class="rounded-[8px] bg-[rgba(250,250,250,1)] p-4 min-h[83px] w-full my-[8px] flex justify-between items-center"
         >
           <div class="par-text">
             <h1 class="text-[rgba(17,17,17,1)] text-[18px] font-semibold">
@@ -580,5 +580,9 @@
         </div>
       </div>
     </section>
+
+    <script></script>
+
+    <script src="./script/scripts.js"></script>
   </body>
 </html>
